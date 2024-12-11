@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock%}
+{% block content %}
+<div class="home-container">
+  <h1>Welcome to personal Expense Tracker </h1>
+  <p>Track your personal expenses and take control of your finances</p>
+  {% if 'user_id' not in session %}
+    <a class = 'btn' href="{{url_for('register')}}">Get Started</a>
+  {% endif %}
+</div>
+{% endblock %}

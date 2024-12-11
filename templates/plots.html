@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Graphs{% endblock %}
+{% block content %}
+<div class='container'>
+    <h1>Graphs</h1>
+    <div class='plots-container'>
+        <div class='plot'>
+            {% if category_plot %}
+                <h3>Expenses by Category</h3>
+                <img src="data:image/png;base64,{{ category_plot }}" alt="Expenses by Category">
+            {% else %}
+                <p>No data available to display the Expenses by Category plot.</p>
+            {% endif %}
+        </div>
+        <div class='plot'>
+            {% if monthly_plot %}
+                <h3>Monthly Expenses by Category</h3>
+                <img src="data:image/png;base64,{{ monthly_plot }}" alt="Monthly Expenses by Category">
+            {% else %}
+                <p>No data available to display the Monthly Expenses by Category plot.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

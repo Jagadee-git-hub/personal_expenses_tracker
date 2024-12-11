@@ -1,0 +1,147 @@
+body
+{
+    font-family : Arial,sans-serif;
+    margin : 0;
+    padding :0;
+    background-color : #f4f4f4;
+    color :#333
+}
+header
+{
+    background-color : grey ;
+    color : white;
+    padding : 1rem 2rem;
+}
+header nav {
+    display :flex ;
+    justify-content : space-between;
+    align-items : center ;
+
+}
+header navv a
+{
+    color :white;
+    text-decoration : none;
+    margin-right :1rem;
+}
+header nav a : hover{
+    text-decoration : underline;
+    color : blue;
+    background-color : black ;
+}
+.main-container{
+    padding :2rem;
+    text-align : center;
+
+}
+.form-container{
+    max-width :600px;
+    margin :2rem auto;
+    padding : 1rem 2rem;
+    background-color : white;
+    border-radius :8px;
+    box-shadow : 0 0 10 px rbga(0,0,0,0.1);
+}
+.dashboard-container{
+    max-width :80%;
+    margin :2rem auto;
+    padding : 1rem 2rem;
+    background-color : white;
+    border-radius :8px;
+    box-shadow : 0 0 10 px rbga(0,0,0,0.1);
+}
+input,button{
+    display : block ;
+    width : 100%;
+    padding : 0.8rem;
+    margin : 1rem 0;
+    border-radius : 4px;
+    border : 1px solid #ddd;
+
+}
+button {
+    background-color : white;
+    color :black;
+    border : 1px solid #ddd ;
+    cursor :pointer;
+    width : 50%
+}
+button:hover {
+    background-color : Green;
+    border : 1px solid #ddd;
+}
+.flash {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.flash-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.flash-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.flash-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+.form-container .buttons{
+    display:flex;
+    flex-direction : row ;
+    justify-content : space-between;
+    align-items : center;
+    width :100%;
+}
+.f{
+    display : flex;
+    justify-content :space-around;
+    align-items : center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.bt{
+    display : inline-block;
+    width : 100% ;
+    background-color: #007bff;
+    color: white;
+    border: solid;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.container{
+    max-width : 80% ;
+    margin :2rem auto;
+    padding : 20px;
+    background-color : white :
+    border-radius : 8px;
+    border: solid ;
+    box-shadow : 0 0 10px rbga(0,0,0,0.1)
+
+}
+.plots-container{
+    display : flex ;
+    flex-direction :row;
+    flex-wrap : nowrap;
+    justify-content : space-around ;
+    align-items : center;
+    gap : 20px;
+}
+.plots {
+    flex : 1 1 45%;
+    max-width : 48%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    text-align:center;
+}
+img {
+    max-width : 100%;
+    height : auto;
+    border-radius : 5px;
+}

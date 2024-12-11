@@ -1,0 +1,51 @@
+id,date,amount,category,notes,user_id
+1,2023-01-01,45.50,Food,Dinner at restaurant,1
+2,2023-01-02,60.00,Entertainment,Movie tickets,1
+3,2023-01-03,120.00,Rent,Monthly rent,1
+4,2023-01-04,75.00,Transport,Monthly bus pass,1
+5,2023-01-05,150.00,Groceries,Weekly groceries,1
+6,2023-01-06,30.00,Utilities,Electricity bill,1
+7,2023-01-07,200.00,Healthcare,Doctor visit,1
+8,2023-01-08,50.00,Savings,Savings deposit,1
+9,2023-01-09,40.00,Miscellaneous,Random expense,1
+10,2023-01-10,45.50,Food,Lunch at cafe,1
+11,2023-01-11,120.00,Rent,Monthly rent,1
+12,2023-01-12,60.00,Entertainment,Concert tickets,1
+13,2023-01-13,200.00,Healthcare,Medicine purchase,1
+14,2023-01-14,150.00,Groceries,Weekly groceries,1
+15,2023-01-15,30.00,Utilities,Water bill,1
+16,2023-01-16,75.00,Transport,Taxi fare,1
+17,2023-01-17,50.00,Savings,Fixed deposit,1
+18,2023-01-18,45.50,Food,Dinner at restaurant,1
+19,2023-01-19,40.00,Miscellaneous,Gadget accessory,1
+20,2023-01-20,100.00,Utilities,Internet bill,1
+21,2023-01-21,45.50,Food,Brunch at diner,1
+22,2023-01-22,60.00,Entertainment,Movie tickets,1
+23,2023-01-23,120.00,Rent,Monthly rent,1
+24,2023-01-24,75.00,Transport,Monthly bus pass,1
+25,2023-01-25,150.00,Groceries,Weekly groceries,1
+26,2023-01-26,30.00,Utilities,Electricity bill,1
+27,2023-01-27,200.00,Healthcare,Doctor visit,1
+28,2023-01-28,50.00,Savings,Savings deposit,1
+29,2023-01-29,40.00,Miscellaneous,Random expense,1
+30,2023-01-30,45.50,Food,Lunch at cafe,1
+31,2023-01-31,120.00,Rent,Monthly rent,1
+32,2023-02-01,60.00,Entertainment,Concert tickets,1
+33,2023-02-02,200.00,Healthcare,Medicine purchase,1
+34,2023-02-03,150.00,Groceries,Weekly groceries,1
+35,2023-02-04,30.00,Utilities,Water bill,1
+36,2023-02-05,75.00,Transport,Taxi fare,1
+37,2023-02-06,50.00,Savings,Fixed deposit,1
+38,2023-02-07,45.50,Food,Dinner at restaurant,1
+39,2023-02-08,40.00,Miscellaneous,Gadget accessory,1
+40,2023-02-09,100.00,Utilities,Internet bill,1
+41,2023-02-10,45.50,Food,Brunch at diner,1
+42,2023-02-11,60.00,Entertainment,Movie tickets,1
+43,2023-02-12,120.00,Rent,Monthly rent,1
+44,2023-02-13,75.00,Transport,Monthly bus pass,1
+45,2023-02-14,150.00,Groceries,Weekly groceries,1
+46,2023-02-15,30.00,Utilities,Electricity bill,1
+47,2023-02-16,200.00,Healthcare,Doctor visit,1
+48,2023-02-17,50.00,Savings,Savings deposit,1
+49,2023-02-18,40.00,Miscellaneous,Random expense,1
+50,2023-02-19,45.50,Food,Lunch at cafe,1
