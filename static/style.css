@@ -24,10 +24,10 @@ header navv a
     text-decoration : none;
     margin-right :1rem;
 }
-header nav a : hover{
-    text-decoration : underline;
-    color : blue;
-    background-color : black ;
+header nav a:hover {
+    text-decoration: underline;
+    color: blue;
+    background-color: black;
 }
 .main-container{
     padding :2rem;
@@ -118,7 +118,7 @@ button:hover {
     max-width : 80% ;
     margin :2rem auto;
     padding : 20px;
-    background-color : white :
+    background-color : white ;
     border-radius : 8px;
     border: solid ;
     box-shadow : 0 0 10px rbga(0,0,0,0.1)

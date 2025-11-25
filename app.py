@@ -9,18 +9,69 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import base64
 import io
-
+import os
+from dotenv import load_dotenv
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'Jaga_#4216')
-
+load_dotenv()
+us_er = os.getenv('user')
+passw = os.getenv('password')
+data_base = os.getenv('database')
 #Database connection
 def get_db_connection():
     return conn.connect(
         host="localhost",
-        user='root',
-        password='Jaga$&4216',
-        database='expense_tracker'
+        user = us_er ,
+        password= passw,
+        database= data_base
     )
+# --- Initialize database and tables if not exist ---
+def init_db():
+    temp_db = conn.connect(
+        host="localhost",
+        user="root",
+        password="Jaga@4216"
+    )
+    temp_cursor = temp_db.cursor()
+    temp_cursor.execute("CREATE DATABASE IF NOT EXISTS expense_tracker")
+    temp_cursor.close()
+    temp_db.close()
+
+    mydb = conn.connect(
+        host="localhost",
+        user="root",
+        password="Jaga@4216",
+        database="expense_tracker"
+    )
+    cursor = mydb.cursor()
+
+    # Users table
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS users (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            username VARCHAR(100) NOT NULL,
+            email VARCHAR(100) UNIQUE NOT NULL,
+            password VARCHAR(255) NOT NULL
+        )
+    """)
+
+    # Expenses table
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS expenses (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            user_id INT,
+            date DATE,
+            amount DECIMAL(10,2),
+            category VARCHAR(100),
+            notes TEXT,
+            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+        )
+    """)
+
+    mydb.commit()
+    cursor.close()
+    mydb.close()
+
 #home page routing
 @app.route('/')
 def home():
@@ -260,10 +311,11 @@ def update_expense(expense_id):
     return render_template('update_expense.html', expense=expense)
 
 
-@app.route('/logout')
+@app.route('/logout') 
 def logout():
     session.clear()
     flash("logged out succesfully","success")
     return redirect(url_for('home'))
-if __name__=='__main__':
-    app.run()
+if __name__ == '__main__':
+    init_db()
+    app.run(debug =True)
